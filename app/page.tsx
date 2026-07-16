@@ -5,10 +5,10 @@ const STACK = [
   "LangGraph",
   "Google ADK",
   "MCP",
-  "A2A Protocol",
   "GraphRAG",
   "Hybrid Search",
-  "DPO",
+  "GRPO/RLVR",
+  "LlamaFactory",
   "QLoRA",
   "Qwen2-VL",
   "Qdrant",
@@ -26,17 +26,17 @@ const PROJECTS = [
     result: "Generates a full investment memo in 60–90s.",
     stack: ["LangGraph", "FastAPI", "Qdrant", "DSPy"],
     repo: "https://github.com/AmanDataGuy/WealthOS",
-    demo: "", // ponytail: fill in live/Streamlit URL when deployed, button hides until then
-    screenshot: "",
+    demo: "http://13.203.227.73:8501",
+    screenshot: "/wealthos.png",
   },
   {
-    name: "CallOS",
-    tagline: "Self-improving AI voice agent platform.",
-    body: "Multi-agent voice system on Google ADK, 7 agents / 29 tools with A2A endpoints and human-in-the-loop escalation; shipped to GCP Cloud Run via Terraform.",
+    name: "Resolv",
+    tagline: "Harness-first supply-chain exception agent.",
+    body: "Google ADK pipeline with only 2 LLM agents (classify, draft) across 6 exception types; revenue math, SLA/penalty lookup, and the auto-send/human/escalate decision stay deterministic Python, with exact-match guardrails vetoing auto-send on hallucinated order IDs or amounts.",
     result:
-      "Weekly DPO fine-tune loop gated by an LLM-as-judge eval harness before deploy.",
-    stack: ["Google ADK", "MCP", "A2A", "TRL/DPO"],
-    repo: "https://github.com/AmanDataGuy/CallOS",
+      "Drafter fine-tuned SFT → ORPO → GRPO/RLVR on 190 pairs distilled from 7,826 real late deliveries — fact-inclusion 80% → 90% across 4 stages, reward is the production verifier itself, not an LLM judge.",
+    stack: ["Google ADK", "GRPO/RLVR", "LlamaFactory", "RAG"],
+    repo: "https://github.com/AmanDataGuy/Resolv",
     demo: "",
     screenshot: "",
   },
@@ -49,7 +49,7 @@ const PROJECTS = [
     stack: ["Qwen2-VL", "QLoRA", "Neo4j", "GraphRAG"],
     repo: "https://github.com/AmanDataGuy/RetailGraph",
     demo: "",
-    screenshot: "",
+    screenshot: "/retailgraph.png",
   },
 ];
 
@@ -328,7 +328,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="rounded-md bg-green-dark px-4 py-2 text-bg transition-colors hover:bg-green-mid"
                     >
-                      Live Demo
+                      Try ↗
                     </a>
                   )}
                   <a
