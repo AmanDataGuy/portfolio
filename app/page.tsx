@@ -48,7 +48,7 @@ const PROJECTS = [
       "94.2% exact-match extraction; vector-only search scored 0/20 on constraint queries.",
     stack: ["Qwen2-VL", "QLoRA", "Neo4j", "GraphRAG"],
     repo: "https://github.com/AmanDataGuy/RetailGraph",
-    demo: "",
+    demo: "http://13.204.65.185:8501/",
     screenshot: "/retailgraph.png",
   },
 ];
