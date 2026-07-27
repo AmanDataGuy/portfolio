@@ -26,7 +26,7 @@ const PROJECTS = [
     result: "Generates a full investment memo in 60–90s.",
     stack: ["LangGraph", "FastAPI", "Qdrant", "DSPy"],
     repo: "https://github.com/AmanDataGuy/WealthOS",
-    demo: "http://13.235.90.128:8501",
+    demo: "http://13.200.27.251:8501/",
     screenshot: "/wealthos.png",
   },
   {
@@ -48,7 +48,7 @@ const PROJECTS = [
       "94.2% exact-match extraction; vector-only search scored 0/20 on constraint queries.",
     stack: ["Qwen2-VL", "QLoRA", "Neo4j", "GraphRAG"],
     repo: "https://github.com/AmanDataGuy/RetailGraph",
-    demo: "http://13.204.65.185:8501/",
+    demo: "http://65.1.23.21:8501/",
     screenshot: "/retailgraph.png",
   },
 ];
