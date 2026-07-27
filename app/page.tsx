@@ -26,7 +26,7 @@ const PROJECTS = [
     result: "Generates a full investment memo in 60–90s.",
     stack: ["LangGraph", "FastAPI", "Qdrant", "DSPy"],
     repo: "https://github.com/AmanDataGuy/WealthOS",
-    demo: "http://13.203.227.73:8501",
+    demo: "http://13.235.90.128:8501",
     screenshot: "/wealthos.png",
   },
   {
