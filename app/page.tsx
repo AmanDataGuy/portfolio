@@ -14,8 +14,6 @@ const STACK = [
   "Qdrant",
   "Neo4j",
   "AWS",
-  "GCP",
-  "Terraform",
 ];
 
 const PROJECTS = [
@@ -57,7 +55,7 @@ const EXPERIENCE = [
   {
     role: "AI Agent Developer Intern",
     org: "Genotek Global · Remote",
-    dates: "May 2026 – Present",
+    dates: "May 2026 – Jun 2026",
     body: "Built a Telegram field-sales bot on AWS EC2 with GPS anti-cheat verification, and an LLM meeting-debrief pipeline (Whisper → Groq LLaMA 3.1 70B → HubSpot) on a 15-state FSM.",
   },
   {
@@ -104,11 +102,11 @@ const CAPABILITIES = [
   },
   {
     title: "LLM Fine-Tuning & Evaluation",
-    body: "QLoRA and DPO fine-tune loops gated by LLM-as-judge eval harnesses before anything ships.",
+    body: "QLoRA and GRPO/RLVR fine-tune loops gated by production-verifier eval harnesses before anything ships.",
   },
   {
     title: "Production Deployment",
-    body: "Terraform-provisioned infra on AWS and GCP Cloud Run — agents that run as services, not scripts.",
+    body: "AWS-provisioned infra with CI and eval gates — agents that run as services, not scripts.",
   },
 ];
 
@@ -154,8 +152,8 @@ export default function Home() {
           </p>
           <p className="mt-4 max-w-lg text-[15px] leading-relaxed text-grey">
             I build multi-agent systems with LangGraph, Google ADK, and MCP —
-            shipped across domains like finance, retail, and voice — deployed
-            on AWS and GCP with eval gates and Terraform, not notebooks.
+            shipped across domains like finance, retail, and e-commerce —
+            deployed on AWS with eval gates, not notebooks.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-4">
