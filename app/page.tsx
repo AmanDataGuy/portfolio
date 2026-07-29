@@ -19,9 +19,10 @@ const STACK = [
 const PROJECTS = [
   {
     name: "WealthOS",
-    tagline: "Personal financial intelligence platform.",
-    body: "8-agent LangGraph state machine orchestrating 45 tools across 7 MCP servers; hybrid dense+sparse RAG over SEC 10-K filings (Qdrant, Cohere rerank).",
-    result: "Generates a full investment memo in 60–90s.",
+    tagline: "Multi-agent financial intelligence platform.",
+    body: "8-agent LangGraph state machine orchestrating 45 tools across 7 MCP servers; hybrid dense+sparse RAG over SEC 10-K filings (Qdrant, Cohere rerank) with DSPy-compiled prompts and E2B-sandboxed DCF + Monte Carlo simulations.",
+    result:
+      "Generates a full investment memo in 60–90s — Pydantic-validated outputs, PII-masked LangSmith traces for auditability.",
     stack: ["LangGraph", "FastAPI", "Qdrant", "DSPy"],
     repo: "https://github.com/AmanDataGuy/WealthOS",
     demo: "http://13.200.27.251:8501/",
@@ -40,10 +41,10 @@ const PROJECTS = [
   },
   {
     name: "RetailGraph",
-    tagline: "Grocery intelligence platform.",
-    body: "Fine-tuned Qwen2-VL-7B (QLoRA) for entity extraction across 11 fields; benchmarked GraphRAG against vector-only search on constraint queries.",
+    tagline: "Multimodal product knowledge graph.",
+    body: "Fine-tuned Qwen2-VL-7B (QLoRA, 4-bit) on 5,369 verified pairs for schema-validated entity extraction; served through a 6-node LangGraph agent routing queries to Cypher, GraphRAG, or analytics. Benchmarked GraphRAG against vector-only search — vector scored 0/20 on constraint queries.",
     result:
-      "94.2% exact-match extraction; vector-only search scored 0/20 on constraint queries.",
+      "94.2% exact-match extraction, 0 parse errors; a 30-query eval harness scored 96.7% / 93.3% / 84.2% on route, intent, and Cypher accuracy, cross-checked with RAGAS and LLM-as-Judge.",
     stack: ["Qwen2-VL", "QLoRA", "Neo4j", "GraphRAG"],
     repo: "https://github.com/AmanDataGuy/RetailGraph",
     demo: "http://65.1.23.21:8501/",
