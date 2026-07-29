@@ -205,7 +205,7 @@ export default function Home() {
 
         <div className="portrait mx-auto aspect-square w-80 sm:w-[25rem]">
           <Image
-            src="/photo.jpg"
+            src="/photo.png"
             alt="Aman Sharma, outdoors in natural daylight"
             width={640}
             height={640}
