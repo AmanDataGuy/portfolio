@@ -20,9 +20,9 @@ const PROJECTS = [
   {
     name: "WealthOS",
     tagline: "Multi-agent financial intelligence platform.",
-    body: "8-agent LangGraph state machine orchestrating 45 tools across 7 MCP servers; hybrid dense+sparse RAG over SEC 10-K filings (Qdrant, Cohere rerank) with DSPy-compiled prompts and E2B-sandboxed DCF + Monte Carlo simulations.",
+    body: "A personal AI advisor recommending Buy/Hold/Avoid against your income, debts, and risk profile — 8 agents on a LangGraph state machine (45 tools across 7 MCP servers), grounded in real SEC 10-K filings via hybrid Agentic RAG with DSPy-compiled prompts and a 5-dim Financial Health Score.",
     result:
-      "Generates a full investment memo in 60–90s — Pydantic-validated outputs, PII-masked LangSmith traces for auditability.",
+      "Delivers each memo in 60–90s — Pydantic-validated outputs, PII-masked LangSmith traces for auditability.",
     stack: ["LangGraph", "FastAPI", "Qdrant", "DSPy"],
     repo: "https://github.com/AmanDataGuy/WealthOS",
     demo: "http://13.200.27.251:8501/",
@@ -31,10 +31,10 @@ const PROJECTS = [
   {
     name: "Resolv",
     tagline: "Guardrail refund agent & pass³ reliability benchmark.",
-    body: "Harness-first refund agent on Google ADK + litellm — 2 LLM stages (extract, resolve) only propose; 7 first-match policy rules in deterministic Python are the sole write path, vetoing every payout before money moves. Refund caps derive from the order record, not the customer's claim.",
+    body: "A harness-first refund agent — 2 LLM stages (extract, resolve) only propose actions, while 7 first-match policy rules in deterministic Python are the sole write path, vetoing every payout before it executes. Refund caps come from the order record, not the customer's claim, so inflated requests fail on arithmetic, not model judgment.",
     result:
-      "τ-bench-style eval vs an adversarial LLM customer: pass³ 0.96, 0 unauthorized refunds across 200 runs — harness off leaked $2,120, harness on leaked $0.",
-    stack: ["Google ADK", "litellm", "GRPO/RLVR", "Qwen2.5"],
+      "Stress-tested against an adversarial AI customer across 200 runs: 0 unauthorized refunds, pass³ 0.96 — harness off leaked $2,120, harness on leaked $0. RLVR/GRPO fine-tuning lifted extractor accuracy 49% → 71%.",
+    stack: ["Google ADK", "FastAPI", "litellm", "GRPO"],
     repo: "https://github.com/AmanDataGuy/Resolv",
     demo: "http://13.206.104.244:8501",
     screenshot: "/resolv.png",
@@ -42,9 +42,9 @@ const PROJECTS = [
   {
     name: "RetailGraph",
     tagline: "Multimodal product knowledge graph.",
-    body: "Fine-tuned Qwen2-VL-7B (QLoRA, 4-bit) on 5,369 verified pairs for schema-validated entity extraction; served through a 6-node LangGraph agent routing queries to Cypher, GraphRAG, or analytics. Benchmarked GraphRAG against vector-only search — vector scored 0/20 on constraint queries.",
+    body: "An AI shopping assistant over a 2,160-product grocery catalog (e.g. \"vegan snacks under $10\") combining a knowledge graph with semantic search. Fine-tuned Qwen2-VL-7B (QLoRA) to read product listings — text and images — and extract structured data at 94.2% accuracy.",
     result:
-      "94.2% exact-match extraction, 0 parse errors; a 30-query eval harness scored 96.7% / 93.3% / 84.2% on route, intent, and Cypher accuracy, cross-checked with RAGAS and LLM-as-Judge.",
+      "A 6-node LangGraph agent routes each query to graph traversal, vector search, or aggregation — vector-only search failed every constraint query (0/20) on a 30-query eval harness that hit 96.7% route accuracy.",
     stack: ["Qwen2-VL", "QLoRA", "Neo4j", "GraphRAG"],
     repo: "https://github.com/AmanDataGuy/RetailGraph",
     demo: "http://65.1.23.21:8501/",
