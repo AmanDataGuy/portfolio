@@ -25,7 +25,7 @@ const PROJECTS = [
       "Delivers each memo in 60–90s — Pydantic-validated outputs, PII-masked LangSmith traces for auditability.",
     stack: ["LangGraph", "FastAPI", "Qdrant", "DSPy"],
     repo: "https://github.com/AmanDataGuy/WealthOS",
-    demo: "http://13.200.27.251:8501/",
+    demo: "http://43.205.84.232:8501/",
     screenshot: "/wealthos.png",
   },
   {
@@ -36,7 +36,7 @@ const PROJECTS = [
       "Stress-tested against an adversarial AI customer across 200 runs: 0 unauthorized refunds, pass³ 0.96 — harness off leaked $2,120, harness on leaked $0. RLVR/GRPO fine-tuning lifted extractor accuracy 49% → 71%.",
     stack: ["Google ADK", "FastAPI", "litellm", "GRPO"],
     repo: "https://github.com/AmanDataGuy/Resolv",
-    demo: "http://13.206.104.244:8501",
+    demo: "https://resolv-mqzh.onrender.com/",
     screenshot: "/resolv.png",
   },
   {
@@ -47,7 +47,7 @@ const PROJECTS = [
       "A 6-node LangGraph agent routes each query to graph traversal, vector search, or aggregation — vector-only search failed every constraint query (0/20) on a 30-query eval harness that hit 96.7% route accuracy.",
     stack: ["Qwen2-VL", "QLoRA", "Neo4j", "GraphRAG"],
     repo: "https://github.com/AmanDataGuy/RetailGraph",
-    demo: "http://65.1.23.21:8501/",
+    demo: "https://retailgraph.onrender.com",
     screenshot: "/retailgraph.png",
   },
 ];
